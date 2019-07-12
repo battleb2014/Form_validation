@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 110%;
+  width: 100%;
+  background-image: url(https://mondrian.mashable.com/uploads%252Fstory%252Fthumbnail%252F83701%252Fc25906ad-d457-4f80-8f95-9d3b93d3ad49.jpg%252F950x534.jpg?signature=XPwUhvESHyIjunBofxp-b1Y4kf4=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+p {
+  display: inline-flex;
+  color: white;
+  float: right;
+}
+
+input {
+  height: 2.25em;
+  width: 15em;
+  margin-bottom: 1.5em;
+  background-color: rgba(149, 160, 201, 0.6);
+}
+
+input::-webkit-input-placeholder {
+   text-align: center;
+   color: white;
+}
+
+button {
+  padding: .75em;
+}
+
+a:hover {
+  color: blue;
+}
+
+.forms {
+  width: 100px;
+  height: 300px;
+  background-color: rgba(149, 160, 201, 0.7);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 10.5em;
+  padding-right: 6em;
+  margin: auto;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+}
+
+.result {
+  color: red;
+}
+
+.left,
+.right {
+  display: inline-flex;
+  font-size: 13px;
+  font-family: tahoma;
+}
+
+#email {
+  border-bottom: solid 2px white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+#password {
+  border-bottom: solid 2px white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
