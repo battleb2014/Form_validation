@@ -37,10 +37,6 @@ input::-webkit-input-placeholder {
    color: white;
 }
 
-button {
-  padding: .75em;
-}
-
 a:hover {
   color: blue;
 }
@@ -90,4 +86,29 @@ a:hover {
   border-top: 0;
   border-left: 0;
   border-right: 0;
+}
+
+#signIn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+@media ( max-width: 770px ) {
+  body,
+  html  {
+    background-image: none;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  .forms {
+    background-color: blue;
+  }
 }
