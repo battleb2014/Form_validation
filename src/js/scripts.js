@@ -1,13 +1,13 @@
 function validate() {
-  var email = getElementById('email').value;
+  var username = getElementById('username').value;
   var password = getElementById('password').value;
 
-    if (email == '' || password == '') {
+    if (email == 'Email' || password == 'Password') {
       document.getElementById('result').innerHTML = 'All fields required';
       return false;
     }  else
       if (password.length < 6){
-      document.getElementById('result').innerHTML = 'Password muct be at least 6 characters long';
+      document.getElementById('result').innerHTML = alert('Password must be at least 6 characters long');
     } else {
       return true;
     }
@@ -15,3 +15,5 @@ function validate() {
 if(validate = true) {
     var submit = '../html/p2.html';
 }
+
+document.getElementById('signIn').onclick = validate();
