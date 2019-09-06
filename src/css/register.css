@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient (to bottom, skyblue, white);
+}
+
+header {
+    text-align: center;
+    background-color: skyblue;
+    height: 10em;
+}
+
+h1 {
+    padding-top: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+
+#newUsername,
+#newPassword,
+#reNewPassword
+ {
+    margin-top: 2em; 
+    height: 1.5em;
+    width: 15em;
+    text-align: center;
+}
+
+#button {
+    margin-top: 5em;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
