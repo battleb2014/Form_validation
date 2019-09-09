@@ -35,12 +35,12 @@ form {
     text-align: center;
 }
 
-#button {
+#submit {
     margin-top: 5em;
     padding: ;
 }
 
-#button:hover {
+#submit:hover {
     cursor: pointer;
     background-color: black;
     color: white;

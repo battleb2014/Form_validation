@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
     <link rel='stylesheet' href='../css/register.css'>
   </head>
@@ -8,11 +11,11 @@
     <header>
       <h1>Create an account</h1>
     </header>
-    <form onsubmit='return insert()'>
-      <input type='text' name='newUsername' placeholder='create username' id='newUsername'>
-      <input type='text' name='newPassword' placeholder='create password' id='newPassword'>
+    <form id='form' onsubmit='return insert()'>
+      <input type='text' name='newUsername' placeholder='new username' id='newUsername'>
+      <input type='text' name='newPassword' placeholder='new password' id='newPassword'>
       <input type='text' name='reNewPassword' placeholder='re-enter password' id='reNewPassword'>
-      <input type='submit' name='submit' value='submit' id='button'>
+      <input type='submit' name='submit' value='submit' id='submit'>
     </form>
     <script type='text/javascript' src='../../scripts.js'></script>
   </body>

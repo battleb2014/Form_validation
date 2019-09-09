@@ -1,17 +1,26 @@
-var usernameArr = [];  //store usernames
-var passwordArr = [];  //store passwords
-var usernameInput = document.getElementById(String('newUsername')).value; //calls 
-var passwordInput = document.getElementById('newPassword').value; //for
-var rePasswordInput = document.getElementById('reNewPassword').value; //input
+var loginInfo = [];  //store individual login arr
 
 function insert() {
-    usernameArr.push( usernameInput );
-    console.log(usernameArr);
-    if( passwordInput === rePasswordInput || passwordInput.length >= 6) {
-        passwordArr.push( passwordInput );
-        console.log(passwordArr);
-    } else {
-        alert('passwords don\'t match/aren\'t long enough');
-    }
+    var username = document.getElementById('newUsername').value(); //calls 
+    var password = document.getElementById('newPassword').value(); //for
+    var rePassword = document.getElementById('reNewPassword').value(); //input
+    var loginCheck = [
+        username,
+        password
+    ]; //creates individual arr
+    
+    //crosschecks username with preexisting usernames and legitimizes password 
+    for( i = 0; i < loginInfo.length; i++ ) {
+        while( loginCheck[0] != loginInfo[i][0] ) {
+            if( password === rePassword && password.length > 5 ) {
+                loginInfo.push( loginCheck );
+                console.log(loginInfo);
+                
+            } else {
+                alert('username taken / passwords don\'t match / too short ')
+                document.getElementById('form').reset();
+            };
+        };
+    };
     return false;
 };
