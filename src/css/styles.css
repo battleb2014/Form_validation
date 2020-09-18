@@ -43,8 +43,8 @@ a:hover {
 }
 
 .forms {
-  width: 100px;
-  height: 300px;
+  width: 9em;
+  height: 18em;
   background-color: rgba(149, 160, 201, 0.85);
   position: absolute;
   top:0;
